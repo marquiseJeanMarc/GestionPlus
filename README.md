@@ -1,4 +1,4 @@
 # GestionPlus
 ## TO DO :
-- redigé la docs
+- rediger la doc
 projet fin d’étude
