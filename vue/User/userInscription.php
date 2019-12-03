@@ -7,7 +7,7 @@
 		<fieldset class="fieldsetConnexion">
 			<legend class="legendConnexion">Vos coordonnées d'inscription:</legend>
 			<form id="formConnexion" action="<?php echo WEBROOT ?>User/signIn" method="POST">
-				<input type="text" id="inputNom" name="lastName" placeholder="Votre Nom" required="required" value="marquise">
+				<input type="text" id="inputNom" name="lastName" placeholder="Votre Nom" required="required" value="marquise" title="entrez votre nom">
 					<div class="info" id="infoNom">
 						<?php 
 							if(isset ($log1)){
@@ -15,7 +15,7 @@
 							}
 						?>
 					</div>
-				<input type="text" id="inputPrenom" name="firstName" placeholder="Votre prénom" value="marc">
+				<input type="text" id="inputPrenom" name="firstName" placeholder="Votre prénom" value="marc" title="entrez votre prénom">
 					<div class="info" id="infoPrenom">
 						<?php 
 							if(isset ($log2)){
@@ -23,7 +23,7 @@
 							}
 						?>
 					</div>			
-				<input type="email" id="inputEmail" name="email" placeholder="Votre email" value="marquisejean-marc@outlook.fr">
+				<input type="email" id="inputEmail" name="email" placeholder="Votre email" title="entrez votre adresse email" value="marquisejean-marc@outlook.fr">
 					<div class="info" id="infoEmail">
 						<?php 
 							if(isset ($log3)){
@@ -31,7 +31,7 @@
 							}
 						?>
 					</div>			
-				<input type="password" id="inputPass1" name="pass1" placeholder="Entrez un mot de passe">
+				<input type="password" id="inputPass1" name="pass1" placeholder="Entrez un mot de passe" title="entrez votre mot de pasee">
 					<div class="info" id="infoPass1">
 						<?php
 					 		if(isset ($log4)){
@@ -39,7 +39,7 @@
 							}
 						?>
 					</div>				
-				<input type="password" id="inputaPass2" name="pass2" placeholder="Confirmez votre mot de passe">
+				<input type="password" id="inputaPass2" name="pass2" placeholder="Confirmez votre mot de passe" title="entrez la confirmation de votre mot de passe">
 					<div class="info" id="infoPass2">
 						<?php 
 							if(isset ($log5)){
@@ -47,7 +47,7 @@
 							}
 						?>
 					</div> 			
-				<input type="submit" class="push_button blue blueRedirection" value="Valider l'inscription">
+				<input type="submit" class="push_button blue blueRedirection" value="Valider l'inscription" title="appuyer sur le bouton de validation">
 					<?php 
             			if(isset($log)){
 							echo '<p id="pInscription">'.$log.'</p>'; 

@@ -43,7 +43,6 @@ class DB
       $stmt = null;
       return $result;
   }
-
   // Méthode pour récupérer le dernier ID crée dans la BDD
   public static function lastId() {
     return self::connect()->lastInsertId();

@@ -1,8 +1,8 @@
 <main>
 	<form id="formRecherche" action="<?php echo WEBROOT ?>User/signIn" method="POST">
 		<div id="inputRecherche">
-			<input type="text" name="recherche" placeholder="RECHERCHE">
-			<input type="submit" class="push_button blue blueRedirection " value="Valider">
+			<input type="text" name="recherche" placeholder="RECHERCHE" title="la barre de recherche">
+			<input type="submit" class="push_button blue blueRedirection" value="Valider" title="botton de validation de la barre de recherche">
 		</div>
 	</form>
 	<section>

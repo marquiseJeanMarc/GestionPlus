@@ -5,10 +5,6 @@ class CtrlAccueil extends Controller {
 		$this->render('Accueil','index');
 	}
 
-	public function inscription() 
-	{
-		$this->render('User','userInscription');
-	}
 
 	public function accueil() 
 	{

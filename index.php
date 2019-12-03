@@ -9,11 +9,11 @@
 			define('ROOT',str_replace('index.php', '', $_SERVER['SCRIPT_FILENAME']));
 		?>
 		<meta charset="UTF-8">
-		<title>GESTION PLUS</title>
 		<link rel="stylesheet" href="<?php echo WEBROOT ?>css/style.css">
 		<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Fascinate&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+		<title>GESTION PLUS</title>
 	</head>
 	<body>
 		<?php
@@ -45,7 +45,7 @@
 			</header>
 			<aside>
 				<div id="blockGestion">
-					<h1>GESTION</h1>
+					<p>GESTION</p>
 				</div>
 				<div id="espace">
 					<p>descriptif du produit</p>
@@ -54,25 +54,25 @@
 				<div id="tableauDeBort_aside">
 					<h3>TABLEAU DIAGNOSTIC</h3>
 					<div id="inputSupprime">
-						<input type="checkbox" class="supprimer" name="suppprimes">
+						<input type="checkbox" class="supprimer" name="suppprimes" title="case supprimer">
 						<label id="supp">supprimer</label>
 					</div>
 					<div class="border"></div>
 					<div id="champsDéroulant">
 						<div class="inputChampsDéroulant">
-							<input type="checkbox" class="supprimer" name="suppprimes">
+							<input type="checkbox" class="supprimer" name="suppprimes" title="case sélectionner ">
 							<label class="inputAside">dr martens</label>
 						</div>
 						<div class="inputChampsDéroulant">
-							<input type="checkbox" class="supprimer" name="suppprimes">
+							<input type="checkbox" class="supprimer" name="suppprimes" title="case sélectionner">
 							<label class="inputAside">vans</label>
 						</div>
 						<div class="inputChampsDéroulant">
-							<input type="checkbox" class="supprimer" name="suppprimes">
+							<input type="checkbox" class="supprimer" name="suppprimes" title="case sélectionner">
 							<label class="inputAside">lacets oxford</label>
 						</div>
 						<div class="inputChampsDéroulant">
-							<input type="checkbox" class="supprimer" name="suppprimes">
+							<input type="checkbox" class="supprimer" name="suppprimes" title="case sélectionner">
 							<label class="inputAside">basket zoom 2k</label>
 						</div>
 					</div>
@@ -128,7 +128,9 @@
 				else{
 					echo 'erreur 404';
 				}
-		    }
+		    } else{
+					echo 'erreur 404';
+				}
 		?>		
 		<script src="<?php echo WEBROOT ?>js/script.js"></script>
 		<script src="<?php echo WEBROOT ?>js/application.js"></script>

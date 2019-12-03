@@ -17,8 +17,8 @@
         <fieldset>
           <legend>Veuillez entrez une gamme</legend>
           <p>Ex: chaussures d'homme, viande, buffet...</p>
-          <input type="text" name="nom_type_categorie">
-          <input type="text" name="fk_c">
+          <input type="text" name="nom_type_categorie" title="entrez votre sous catégorie">
+          <input type="text" name="fk_c" title="entrez votre sous catégorie">
         </fieldset>
       </form>
     </div>
@@ -30,12 +30,12 @@
             <label id="lavelNom">Entrez un nom : </label>
             <label id="labelDescription">Entrez la description : </label>
             <label id="labelImage" class="img">Choisir une image : </label>
-            <input type="submit" class="push_button blue" value="Ajouter">
+            <input type="submit" class="push_button blue" value="Ajouter" title="botton de validation">
           </div>
           <div id="fieldsetProduitInput">
-            <input type="text" name="nom_produit" id="nom_produit">
-            <textarea name="description_produit" id="description_produit"></textarea>
-            <input type="file" name="img" class="img" >
+            <input type="text" name="nom_produit" id="nom_produit" title="entrez le nom de votre produit">
+            <textarea name="description_produit" id="description_produit" title="entrez une description du produit"></textarea>
+            <input type="file" name="img" class="img" title="choisir une image">
           </div>  
         </div>   
       </fieldset>

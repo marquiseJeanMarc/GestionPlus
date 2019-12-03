@@ -100,8 +100,4 @@
         </div>    
     </div>
 </fieldset>
- <div id="premier_schéma"> 
-      <div id="piechart_3d"></div>
-      <div id="line_top_x"></div>
-    </div>
 </main>

@@ -20,6 +20,11 @@ class CtrlUser extends Controller
 		$this->render('TableauDesProduits','index');
 	}
 
+	public function userInscription() 
+	{
+		$this->render('User','userInscription');
+	}
+
 // méthode de l'action create
 	public function signIn() {
 // chargement de la DAO User avec la méthode loadDao du "super controleur"
@@ -149,8 +154,7 @@ class CtrlUser extends Controller
 		else {
         	$mdp_secu = $user->getPass();
    		}
-   		
-     	if ($badPoint == 0) {
+   		if ($badPoint == 0) {
      	
 	        $newUser = new User($nom,$prenom,$email,$mdp_secu);
 	        $newUser->setId($_SESSION['id']);
