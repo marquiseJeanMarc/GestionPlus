@@ -7,17 +7,16 @@ class Entreprise extends AbstractEntity
 	private $nomEntreprise;
 	private $adresse;
 	private $telephone;
-	private $statut;
+
 	
 
 	// Déclaration du constructeur avec ses arguments qui font références aux attributs
-	public function __construct($nomEntrepriseParam, $adresseParam, $telephoneParam, $statutParam) 
+	public function __construct($nomEntrepriseParam, $adresseParam, $telephoneParam) 
 	{
 		// $this fait référence à l'instance de l'objet (new Objet()).
 		$this->nomEntreprise = $nomEntrepriseParam;
 		$this->adresse = $adresseParam;
 		$this->telephone = $telephoneParam;
-		$this->statut = $statutParam;
 		
 	}
 
@@ -56,16 +55,6 @@ class Entreprise extends AbstractEntity
 	public function setTelephone($telephoneParam) 
 	{
 		$this->telephone = $telephoneParam;
-	}
-
-
-	public function getStatut() 
-	{
-		return $this->statut;
-	}
-	public function setStatut($statutParam) 
-	{
-		$this->statut = $statutParam;
 	}
 }
 ?>

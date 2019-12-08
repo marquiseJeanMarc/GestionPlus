@@ -36,15 +36,15 @@ if (document.querySelector("input[name='nomEntreprise']") != null)
 
 	// Déclaration des regexp
 	let regNom = /^[A-Za-zÀ-ÖØ-öø-ÿ]+$/;
-	let regAdresse = /^[A-Za-zÀ-ÖØ-öø-ÿ-]+$/;
-	let regTel = /^[a-z0-9._-]+@[a-z0-9._-]+\.[a-z]{2,6}$/;
-	let regStatut = /^(?=.{6,})(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[&?:\/=+§^¤£@\#!()"$]).*$/;
+	let regAdresse = /^[0-9A-Za-zÀ-ÖØ-öø-ÿ-\s]+$/;
+	let regTel = /^[0-9\s]{10,16}$/;
+	
 
 	// Déclaration des messages
 	let messNom = "nom pas bon";
 	let messAdresse = "adresse pas bon";
-	let messTel = "Ne peut contenir que des chiffres";
-	let messStatut = 'Ne peut contenir uniquement des lettres';
+	let messTel = "Ne peut contenir que des chiffres.ex:12 34 56 78 91 ou 1234567891";
+	
 
 	// Ajout d'écouteur d'évènement au changement de la valeur des inputs
 	// le 1er paramètre de l'écouteur d'évènement est le type d'évènement (input)
@@ -62,10 +62,6 @@ if (document.querySelector("input[name='nomEntreprise']") != null)
 	tel.addEventListener("input",function() 
 	{
 		verif(tel,regTel,'#infoTel',messTel);
-	});
-	statut.addEventListener("input",function() 
-	{
-		verif(statut,regStatut,'#infoStattut',messStatut);
 	});
 	
 

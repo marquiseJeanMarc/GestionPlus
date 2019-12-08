@@ -22,20 +22,20 @@
 			<header>
 				<h1>PLUS</h1>
 				<div id="icones">
-					<p class="image">
-						<a href="<?php echo WEBROOT ?>Accueil/TableauDesProduits"><img src="<?php echo WEBROOT ?>img/détaillée-64.png" alt="icone du tableau des produits"></a>
+					<p class="image" id="iconeDuTableauDesProduits">
+						<a href="<?php echo WEBROOT ?>Accueil/TableauDesProduits"><img src="<?php echo WEBROOT ?>img/tabProd.png" alt="icone du tableau des produits"></a>
 					</p>
-					<p class="image">
+					<p class="image" id="iconeAjouterUnProduit">
 						<a href="<?php echo WEBROOT ?>Accueil/categorie"><img src="<?php echo WEBROOT ?>img/ajouter-au-panier-64.png" alt="icone ajouter un produit"></a>
 					</p>
-					<p class="image">
+					<p class="image" id="iconeDeContact">
 						<a href="<?php echo WEBROOT ?>Accueil/contact"><img src="<?php echo WEBROOT ?>img/iconcontact.png" alt="icone de contact"></a>
 					</p>
-					<p class="image">
+					<p class="image" id="iconeUtilisateur">
 						<a href="<?php echo WEBROOT ?>Accueil/profil/"><img src="<?php echo WEBROOT ?>img/iconuser.png" alt="icone utilisateur"></a>
 					</p>
 				</div>
-				<div id="iconesDroite">				
+				<div id="iconesDroite">	
 					<a href="<?php echo WEBROOT ?>User/logOut"><img src="<?php echo WEBROOT ?>img/icondeconnexion.png" alt="icone déconnexion"></a>					
 					<img id="imgElephant" src="<?php echo WEBROOT ?>img/man.png" alt="photo avatar">
 					<?php

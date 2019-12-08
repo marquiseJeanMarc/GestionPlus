@@ -61,24 +61,47 @@ h3{
 }   
 header h1{
     color: #185E78;
-     font-family: Stencil;
+    font-family: Stencil;
     font-weight: bold;
     font-size: 30px;
 } 
 header img{
     width:28px;
 }
-header .image a {
-
-  
-   
-}
-header .image a:hover:before{
-      animation-duration: 5s;
-/*   transition: content 5s linear;*/
-    content:"coucou";
+header #iconeDuTableauDesProduits a:hover:after{
+    content:"Tableau des produits";
     color: black;
-    margin-left: -10px;
+     position: relative;
+    bottom:1.5vw;
+    left:0.5vw; 
+}
+header #iconeAjouterUnProduit a:hover:after{
+    content:"ajouter un produit";
+    color: black;
+    position: relative;
+    bottom:1.5vw;
+    left:0.5vw;
+}
+header #iconeDeContact a:hover:after{
+    content:"Contact";
+    color: black;
+    position: relative;
+    bottom:1.5vw;
+    left:0.5vw;
+}
+header #iconeUtilisateur a:hover:after{
+    content:"Profil";
+    color: black;
+    position: relative;
+    bottom:1.5vw;
+    left:0.5vw;
+}
+header #iconesDroite  a:hover:after{
+    content:"Déconnexion";
+    color: black;
+    position: relative;
+    bottom:1.5vw;
+    left:-7.5vw;
 }
 #imgElephant{
     height:42px;
@@ -90,8 +113,8 @@ header .image a:hover:before{
     margin-top: 7px;
 }
 #icones a{
-    width: 20px;
-    margin-left:130px;
+    width: 10vw;
+
 }
 #iconesDroite{
     display: flex;
@@ -442,7 +465,8 @@ select {
     background-color: #ffffff;
     border: 1px solid #000000;
     width: 180px;
-    height: 62px;    
+    height: 62px;  
+    margin-left: 38px;  
 }
 #derniéreDonnées{
     display: flex;

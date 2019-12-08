@@ -1,7 +1,7 @@
  function calculate_this() {
       
 //parti valeurs fixe 
-         var valeurs = [20, 80, 2.90, 0.28, 3.40, 0.25, 13.10, 1, 0.10, 0.02];
+        var valeurs = [20, 80, 2.90, 0.28, 3.40, 0.25, 13.10, 1, 0.10, 0.02];
 //parti variable js qui fait le lien pour récupérer se qui se trouve dans les champs du html 
         var tableauxEntrezDonne = [];
         var tableauxEntrezId = [];

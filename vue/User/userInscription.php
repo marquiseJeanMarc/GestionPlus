@@ -57,7 +57,7 @@
 		</fieldset>
 		<?php 
 		echo '<div id="blueRedirection">';
-		echo '<a href="'.WEBROOT.'Accueil/accueil">Retour</a>';
+		echo '<a class="push_button blue blueRedirection" href="'.WEBROOT.'Accueil/accueil">Retour</a>';
 		echo '</div>';
 		?>
 	</div>

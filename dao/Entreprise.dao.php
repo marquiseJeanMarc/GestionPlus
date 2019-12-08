@@ -8,8 +8,20 @@ class DaoEntreprise extends Controller
 	// Déclaration de méthode du dao avec l'objet $entreprise en argument
 	public function create($entreprise) 
 	{
-		DB::select('INSERT INTO users_entreprise (nomEntreprise,adresse,tel,statut) VALUES (?,?,?,?)', array($entreprise->getNomEntreprise(),$entreprise->getAdresse(),$entreprise->getTelephone(),$entreprise->getStatut()));
+		DB::select('INSERT INTO users_entreprise (nomEntreprise,adresse,tel) VALUES (?,?,?)', array($entreprise->getNomEntreprise(),$entreprise->getAdresse(),$entreprise->getTelephone()));
 	}
+	// public function read($id) {
+	// 	$donnees = DB::select('SELECT * FROM users WHERE users_id = ?', array($id));
+	// 	if (!empty($donnees)){
+	// 		$user = new User($donnees['nomEntreprise'],$donnees['adresse'],$donnees['tel'],$donnees['pass1']);
+	// 		// on récupère l'id de l'utilisateur de la nouvelle instance de l'objet
+	// 		$user->setId($donnees['idusers_entreprise']);
+	// 		return $entreprise;
+	// 	} 
+	// 	else{
+	// 		return null;    
+	// 	} 
+	// }
 	// public function read($id) 
 	// {
 	// 	$donnees = DB::select('SELECT * FROM  users_entreprise WHERE id = ?', array($id));
